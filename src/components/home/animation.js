@@ -7,6 +7,8 @@ import Lottie from 'react-lottie-player'
 import lottieJson from '/public/animation.json'
 
 export default function Animation() {
+  console.log('Animation invoked...')
+
   return (
     <Lottie
       loop

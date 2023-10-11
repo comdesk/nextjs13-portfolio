@@ -1,6 +1,8 @@
 import Link from "next/link"
 
 export default function Footer() {
+    console.log('footer invoked...')
+
     return (
         <footer className="body-font">
         <div>

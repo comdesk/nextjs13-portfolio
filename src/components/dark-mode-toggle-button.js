@@ -28,6 +28,8 @@ export const ICON = {
   };
 
 export default function DarkModeToggleButton() {
+    console.log('DarkModeToggleButton invoked...')
+
     const {theme, setTheme} = useTheme()
     
     const [loaded, setLoaded] = useState(false);

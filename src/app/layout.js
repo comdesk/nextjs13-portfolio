@@ -12,6 +12,8 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  console.log('RootLayout invoked...')
+
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className={inter.className}>        

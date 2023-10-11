@@ -2,6 +2,8 @@ import ProjectItem from "@/components/projects/project-item";
 import { DATABASE_ID, TOKEN } from "@/config/config";
 
 export default async function Projects() {
+    console.log('Projects invoked...')
+
     const options = {
         method: 'POST',
         headers: {

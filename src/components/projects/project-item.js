@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function ProjectItem({data}) {
+    console.log('ProjectItem invoked...')
+
     const title = data.properties.이름.title[0].plain_text;
     const github = data.properties.github.url;
     const description = data.properties.설명.rich_text[0].plain_text;
@@ -27,10 +29,6 @@ export default function ProjectItem({data}) {
         const endDate = new Date(endDateArray[0], endDateArray[1], endDateArray[2]);
 
         const period = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
-
-        console.log(`기간: ${period}`)
-        console.log(`start: ${startDate}`)
-        console.log(`end: ${endDate}`)
 
         return period;
     }
