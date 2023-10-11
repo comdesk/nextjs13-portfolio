@@ -1,5 +1,4 @@
 import Hero from '../components/home/hero.js'
-import { useRef } from 'react';
 
 export default function Home() {
   return (
