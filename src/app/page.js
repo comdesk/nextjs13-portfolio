@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Hero from '../components/home/hero.js'
 
 export default function Home() {
